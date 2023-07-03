@@ -9,75 +9,87 @@
 <body>
     <header>
         <h1>League Of Legends</h1>
-        <p>Conhecendo mais os jogadores de league of leagends.</p>
+        <p>Conhecendo mais os jogadores de League of Legends.</p>
     </header>
     <main>
-        <form action="cadastro.php" method="post" autocomplete="on">
-            <p>
-                <label for="inome">Nick Name:</label> <br>
-                <input type="text" name="nome" id="inome" required min="6" max="30" placeholder="Digite seu Nick ">
-            </p>
-            <p>
-                <label for="iemail">Email:</label> <br>
-                <input type="email" email="email" id="iemail" required placeholder="Digite seu E-mail">
-            </p>
-            <p>
-                <label for="iidade">Idade:</label> <br>
-                <input type="number" idade="idade" id="iidade" required min="10" max="100" laceholder="Idade" >
-            </p>
-            <p>
-                <label for="itempo">Quanto anos você joga?</label> <br>
-                <select name="tempo" id="itempo" required>
-                    <option value="" selected disabled>Selecione uma Opção</option>
-                    <option value="">Menos de 1 ano</option>
-                    <option value="">Mais de 1 ano</option>
-                    <option value="">Menos de 3 anos</option>
-                    <option value="">Mais de 3 anos</option>
-                    <option value="">De 5 pra mais</option>
-                </select>
-            </p>
+        <form action="cadastro.php" method="post" autocomplete="on"> 
+                <div class="caixa">
+                    <p>
+                        <label for="inome">Nick Name:</label> <br>
+                        <input type="text" name="nome" id="inome" required min="6" max="30" placeholder=" Digite seu Nick ">
+                    </p>
+                </div>
+                <div class="caixa">
+                    <p>
+                        <label for="iemail">Email:</label> <br>
+                        <input type="email" email="email" id="iemail" required placeholder=" Digite seu E-mail">
+                    </p>
+                </div>
+                <div class="caixa">
+                    <p>
+                        <label for="iidade">Idade:</label> <br>
+                        <input type="number" idade="idade" id="iidade" required min="10" max="100" placeholder=" Idade" >
+                    </p>
+                </div>
+            <div class="seletor">
+                <p>
+                    <label for="itempo">Quanto anos você joga?</label> <br>
+                    <select name="tempo" id="itempo" required>
+                        <option value="" selected disabled>Selecione uma Opção</option>
+                        <option value="">Menos de 1 ano</option>
+                        <option value="">Mais de 1 ano</option>
+                        <option value="">Menos de 3 anos</option>
+                        <option value="">Mais de 3 anos</option>
+                        <option value="">De 5 pra mais</option>
+                    </select>
+                </p>
+            </div>
             <p>
                 Qual sua main lane? <br>
-                <input type="radio" name="lane" id="itop"><label for="itop">Top</label> <br>
-                <input type="radio" name="lane" id="ijg"><label for="ijg">Jungle</label> <br>
-                <input type="radio" name="lane" id="imid"><label for="imid">Mid</label> <br>
-                <input type="radio" name="lane" id="iadc"><label for="iadc">Adc</label> <br>
-                <input type="radio" name="lane" id="isup"><label for="isup">Suporte</label>
+                <input type="radio" name="lane" id="itop"><label for="itop"> &nbsp;Top</label> <br>
+                <input type="radio" name="lane" id="ijg"><label for="ijg">   &nbsp;Jungle</label> <br>
+                <input type="radio" name="lane" id="imid"><label for="imid">  &nbsp;Mid</label> <br>
+                <input type="radio" name="lane" id="iadc"><label for="iadc">  &nbsp;Adc</label> <br>
+                <input type="radio" name="lane" id="isup"><label for="isup">  &nbsp;Suporte</label>
             </p>
-            <p>
-                <label for="ielo">Qual foi seu maior ELO?</label> <br>
-                <select name="elo" id="ielo" required>
-                    <option value="" selected disabled>Selecione uma Opção</option>
-                    <option value="">Ferro</option>
-                    <option value="">Bronze</option>
-                    <option value="">Prata</option>
-                    <option value="">Gold</option>
-                    <option value="">Platina</option>
-                    <option value="">Diamante</option>
-                    <option value="">Mestre</option>
-                    <option value="">Grão-Mestre</option>
-                    <option value="">Challenger</option>
-                </select>
-            </p>
+            <div class="seletor">
+                <p>
+                    <label for="ielo">Qual foi seu maior ELO?</label> <br>
+                    <select name="elo" id="ielo" required>
+                        <option value="" selected disabled> Selecione uma Opção</option>
+                        <option value="">Ferro</option>
+                        <option value="">Bronze</option>
+                        <option value="">Prata</option>
+                        <option value="">Gold</option>
+                        <option value="">Platina</option>
+                        <option value="">Diamante</option>
+                        <option value="">Mestre</option>
+                        <option value="">Grão-Mestre</option>
+                        <option value="">Challenger</option>
+                    </select>
+                </p>
+            </div>
             <p>
                 Quais suas maiores dificuldades? <br>
-                <input type="checkbox" name="dif" id="ifarm"><label for="ifarm">Farming</label> <br>
-                <input type="checkbox" name="dif" id="idive"><label for="idive">Dive</label> <br>
-                <input type="checkbox" name="dif" id="icontrol"><label for="icontrol">Controle de Wave</label> <br>
-                <input type="checkbox" name="dif" id="itf"><label for="itf">Team Fight</label> <br>
-                <input type="checkbox" name="dif" id="ibuild"><label for="ibuild">Buildar corretamente</label> <br>
-                <input type="checkbox" name="dif" id="iskill"><label for="iskill">Skill Player</label> <br>
-                <input type="checkbox" name="dif" id="iward"><label for="iward">Wardar</label> <br>
-                <input type="checkbox" name="dif" id="irotaçao"><label for="irotaçao">Rotação</label> <br>
-                <input type="checkbox" name="dif" id="iobj"><label for="iobj">Objetivos</label>
+                <input type="checkbox" name="dif" id="ifarm"><label for="ifarm"> &nbsp;Farming</label> <br>
+                <input type="checkbox" name="dif" id="idive"><label for="idive"> &nbsp;Dive</label> <br>
+                <input type="checkbox" name="dif" id="icontrol"><label for="icontrol"> &nbsp;Controle de Wave</label> <br>
+                <input type="checkbox" name="dif" id="itf"><label for="itf"> &nbsp;Team Fight</label> <br>
+                <input type="checkbox" name="dif" id="ibuild"><label for="ibuild"> &nbsp;Buildar corretamente</label> <br>
+                <input type="checkbox" name="dif" id="iskill"><label for="iskill"> &nbsp;Skill Player</label> <br>
+                <input type="checkbox" name="dif" id="iward"><label for="iward"> &nbsp;Wardar</label> <br>
+                <input type="checkbox" name="dif" id="irotaçao"><label for="irotaçao"> &nbsp;Rotação</label> <br>
+                <input type="checkbox" name="dif" id="iobj"><label for="iobj"> &nbsp;Objetivos</label>
             </p>
-            <p>
-                <label for="imsg">O que você acrescentaria no game?</label> <br>
-                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite uma mensagem aqui"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-            </p>
+                <p>
+                    <label for="imsg">O que você acrescentaria no game?</label> <br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder=" Digite uma mensagem aqui"></textarea>
+                </p>
+            <div id="envio">
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </div>
         </form>
     </main>
 </body>

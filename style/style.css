@@ -4,8 +4,8 @@
 
 :root {
     --color-white: #f3f3f3;
-    --color-darkblue: #1b1b32;
-    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-darkblue: #1b1b32f1;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.932);
     --color-green: #37af65;
 }
 
@@ -23,17 +23,75 @@
 header {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+}
+
+header h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+header p {
+    font-size: 1,2em;
+    line-height: 2em;
+    padding: 0px 0px 10px 0px;
 }
 
 body {
-    background-color: antiquewhite;
+
+    background-image: url(../imagem/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 main {
     box-sizing: border-box;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 50px;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.4;
+    border-radius: 10px;
     background: var(--color-darkblue);
     color: var(--color-white);
     
+}
 
+input, select, textarea {
+
+    border-radius: 5px;
+}
+
+main p {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#inome, #iemail, #iidade, #imsg {
+    width: 690px;
+    height: 35px;
+}
+
+#itempo, #ielo {
+    width: 690px;
+    height: 35px;
+}
+
+#imsg {
+    width: 690px;
+    height: 120px;
+}
+
+#envio input  {
+    display: block;
+    width: 690px;
+    height: 40px;
+    background-color: #37af65;
+    border-radius: 5px;
+    color: var(--color-white);
 }
 
